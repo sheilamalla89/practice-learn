@@ -1,0 +1,38 @@
+package labs;
+
+/*
+ * Create a Student Database with the following attributes:
+ * 	--New Student constructor that takes name and SSN in the arguments
+ * 	--Automatically create an email ID based on the name
+ *  --Set a private static ID
+ *  --Generate a user ID that is combination of Static ID, random 4-digit number between 1000
+ *  	and 9000, and last 4 of SSN
+ *  --Methods: enroll(), pay(), checkBalance(),toString(),showCourses()
+ *  --Use encapsulation to set variables(phone, city, state)
+ * 
+ */
+public class StudentApp {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+ class Student{
+	 
+	 String name;
+	 private String SSN;
+	 String emailID;
+	
+	//Parameterized constructor
+	public Student(String name,String SSN){
+		 this.name = name;
+		 this.SSN = SSN;
+		 
+	 }
+	
+	public void generateEmail(String name) {
+		emailID = name +"@student.email.edu"
+	}
+
+}

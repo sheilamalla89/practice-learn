@@ -1,0 +1,22 @@
+package basics;
+
+public class MinMaxAvg {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println(min({1,2,3,4,5}));
+	}
+	
+	public static int min(int[] n) {
+		return 0;
+	}
+	
+	public static int max(int[] n) {
+		return 0;
+	}
+	
+	public static int avg(int[] n) {
+		return 0;
+	}
+}

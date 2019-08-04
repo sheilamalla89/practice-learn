@@ -1,0 +1,10 @@
+package oop;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		BankAccount acc1 = new BankAccount();
+		acc1.deposit(1000);
+		acc1.checkBalance();
+	}
+}

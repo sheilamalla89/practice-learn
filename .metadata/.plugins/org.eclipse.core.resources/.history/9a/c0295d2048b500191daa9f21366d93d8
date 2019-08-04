@@ -1,0 +1,22 @@
+package oop;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		
+		BankAccount acc1 = new BankAccount();
+		
+		/*
+		 * acc1.accHolderName = "Test1"; acc1.accType = "Saving"; acc1.accNumber =
+		 * "1234567890";
+		 */
+		System.out.println(acc1.toString());
+		
+		// demo for inheritance
+		// since class CDAccount extends BankAcount. Because of which CDAccount inherits all the methods and variable of BankAccount class
+		CDAccount cdAccount1 = new CDAccount();
+		cdAccount1.balance = 5000;
+		cdAccount1.accHolderName ="Jone";
+		System.out.println(cdAccount1.toString());
+	}
+}

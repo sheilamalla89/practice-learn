@@ -1,0 +1,24 @@
+package oop;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		
+		BankAccount acc1 = new BankAccount();
+		BankAccount acc2 = new BankAccount();
+		/*
+		 * acc1.deposit("Checking Account",1000); acc1.checkBalance();
+		 * acc1.withdrawn(500); acc1.checkBalance();
+		 */
+		acc1.accHolderName = "Test1";
+		acc1.accType = "Saving";
+		acc1.accNumber = "1234567890";
+		
+		acc2.accHolderName = "Test2";
+		acc2.accType = "Checking";
+		acc2.accNumber = "0987654321";
+		
+		acc1.toString();
+		acc2.toString();
+	}
+}

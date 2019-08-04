@@ -1,0 +1,12 @@
+package oop;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//Attribute, variables, adjective, description
+		
+		String name, email, phone;
+		
+	}
+
+}

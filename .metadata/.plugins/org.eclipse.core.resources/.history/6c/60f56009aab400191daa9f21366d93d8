@@ -1,0 +1,25 @@
+package oop;
+
+public class Demo {
+	
+	String name, email, phone;
+
+	public static void main(String[] args) {
+		//Attribute, variables, adjective, description
+		Demo person1 = new Demo();
+		System.out.println();
+	}
+	
+ public Demo() {
+	 name = "Dummy";
+	 email = "abcd@email.com ";
+	 phone = "1234567890";
+ }
+ public Demo(String name, String email, String phone) 
+ {
+	this.name = name;
+	this.email =email;
+	this.phone = phone;
+ }
+
+}

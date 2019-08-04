@@ -1,0 +1,22 @@
+package oop;
+
+public class Demo {
+	
+	String name, email, phone;
+
+	public static void main(String[] args) {
+		//Attribute, variables, adjective, description
+		
+		
+		
+	}
+	
+ public Demo() {
+ }
+ public Demo(String name, String email, String phone) 
+ {
+	this.name = name;
+	email = this.email;
+ }
+
+}

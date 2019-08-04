@@ -1,0 +1,17 @@
+package basics;
+
+public class FibonnaciApp {
+
+	public static void main(String[] args) {
+		
+	
+	int firstNumber = 0;
+	int secondNumber = 1;
+	int result;
+	int number = 10;
+	do {
+		result = firstNumber +secondNumber;
+	}
+	while();
+	}
+}

@@ -1,0 +1,17 @@
+package oop;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		
+		BankAccount acc1 = new BankAccount();
+		BankAccount acc2 = new BankAccount();
+		acc1.deposit("Checking Account",1000);
+		acc1.checkBalance();
+		acc1.withdrawn(500);
+		acc1.checkBalance();
+		System.out.println("Routing Number for checking account: "+acc1.routingNumber);
+		System.out.println("Routing Number for saving account: "+acc1.routingNumber);
+		
+	}
+}

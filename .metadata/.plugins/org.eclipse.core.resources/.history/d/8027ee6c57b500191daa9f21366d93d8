@@ -1,0 +1,23 @@
+package labs;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class BankAccount{
+	// Properties of a bank account
+	private int id; //  id  + random 2-digit number + first 2 of ssn
+	private String accountNumber;
+	private String routingNumber;
+	private String name;
+	private String ssn;
+	private double balance;
+	
+	BankAccount(String ssn){
+		
+	}
+	
+}

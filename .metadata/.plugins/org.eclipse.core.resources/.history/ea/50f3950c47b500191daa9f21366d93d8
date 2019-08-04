@@ -1,0 +1,9 @@
+package basics;
+
+import oop.BankAccount;
+
+public class CDAccount extends BankAccount{
+		
+	String interestRate;
+	
+}

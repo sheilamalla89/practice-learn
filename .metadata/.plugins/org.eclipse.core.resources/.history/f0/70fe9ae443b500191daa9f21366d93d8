@@ -1,0 +1,16 @@
+package oop;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		
+		BankAccount acc1 = new BankAccount();
+		
+		acc1.accHolderName = "Test1";
+		acc1.accType = "Saving";
+		acc1.accNumber = "1234567890";
+		
+		
+		acc1.toString();
+	}
+}

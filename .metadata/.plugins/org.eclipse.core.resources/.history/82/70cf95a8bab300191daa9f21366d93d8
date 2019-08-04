@@ -1,0 +1,7 @@
+package basics;
+
+public class Weather {
+	public static void main(String[] args) {
+		//this program will give suggesrions of what to wear based on the weather (temperature)	
+}
+}

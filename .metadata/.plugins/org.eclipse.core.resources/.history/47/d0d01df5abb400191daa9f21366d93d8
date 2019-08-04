@@ -1,0 +1,42 @@
+package oop;
+
+public class Demo {
+	
+	String name, email, phone;
+
+	public static void main(String[] args) {
+		//Attribute, variables, adjective, description
+		Demo person1 = new Demo();
+		Demo person2 = new Demo("Hello","hello@email.com","2345421234");
+		System.out.println(person1.toString());
+		System.out.println(person2.toString());
+	}
+	
+ public Demo() {
+	 name = "Dummy";
+	 email = "abcd@email.com ";
+	 phone = "1234567890";
+ }
+ public Demo(String name, String email, String phone) 
+ {
+	this.name = name;
+	this.email =email;
+	this.phone = phone;
+ }
+
+ public void setName(String name) {
+	 this.name = name;
+ }
+ 
+ public void setEmail(String email) {
+	 this.email = email;
+ }
+ public void setPhone(String phone) {
+	 
+ }
+ public String toString() {
+	 String result = "Name is "+name+". His email id is "+email+" and phone number is "+phone+"."; 
+	 return result;
+ }
+ 
+}

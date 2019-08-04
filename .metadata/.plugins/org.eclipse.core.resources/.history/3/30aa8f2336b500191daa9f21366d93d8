@@ -1,0 +1,43 @@
+package oop;
+
+public class BankAccount {
+	
+	String accType;
+	String accNumber;
+	String routingNumber;
+	String accHolderName;
+	int balance = 1000;
+	String status = "Inactive";
+	
+	public BankAccount(String accType) {
+		System.out.println();
+	}
+	
+	public BankAccount(String accType, String accNumber, String routingNumber, String accHolderName) {
+		this.accType = accType;
+		this.accNumber = accNumber;
+		this.routingNumber = routingNumber;
+		this.accHolderName = accHolderName;
+		
+	}
+	
+	public void deposit(int depositAmount) {
+		System.out.println("Total deposited amount: $"+depositAmount);
+		balance = balance + depositAmount;
+	}
+	
+	public void withdrawn(int withdrawAmt) {
+		System.out.println("Total withdrawn amount is $"+withdrawAmt);
+		balance = balance - withdrawAmt;
+	}
+	
+	public void checkBalance() {
+		System.out.println("Total account balance: $"+ balance);
+	}
+	
+	public void accStatus(String curStatus) {
+		status = curStatus;
+		System.out.println("Current account Status: "+status);
+	}
+
+}

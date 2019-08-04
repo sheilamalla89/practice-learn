@@ -1,0 +1,22 @@
+package basics;
+
+public class FibonnaciApp {
+
+	public static void main(String[] args) {
+		
+	
+	int firstNumber = 0;
+	int secondNumber = 1;
+	int third;
+	int number = 10;
+	int i;
+	for(i = 2;i<number;i++) {
+		third = firstNumber+secondNumber;
+		System.out.println(" "+third);
+		firstNumber = secondNumber;
+		secondNumber = third;
+		
+		
+	}
+	}
+}

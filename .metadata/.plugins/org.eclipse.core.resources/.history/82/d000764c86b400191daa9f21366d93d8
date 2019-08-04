@@ -1,0 +1,11 @@
+package basics;
+
+public class FibonnaciApp {
+
+	int firstNumber = 0;
+	int secondNumber = 1;
+	int result;
+	do {
+		result = firstNumber +secondNumber;
+	}
+}

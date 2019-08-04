@@ -1,0 +1,17 @@
+package oop;
+
+public class BankAccount {
+	
+	String accType;
+	String accNumber;
+	String routingNumber;
+	String accHolderName;
+	
+	public BankAccount() {
+	
+	}
+	public BankAccount(String accType, String accNumber, String routingNumber, String accHolderName) {
+		
+	}
+
+}
