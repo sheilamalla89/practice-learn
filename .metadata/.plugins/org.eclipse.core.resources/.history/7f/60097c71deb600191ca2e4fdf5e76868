@@ -1,0 +1,11 @@
+package exceptionsfiles;
+
+public class PaymentApp {
+
+	public static void main(String[] args) {
+
+		System.out.print("Enter payment amount: ");
+		
+	}
+
+}

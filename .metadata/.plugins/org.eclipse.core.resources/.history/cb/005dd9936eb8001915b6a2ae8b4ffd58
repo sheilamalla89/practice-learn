@@ -1,0 +1,9 @@
+package labs;
+
+public class PasswordVerifyApp {
+
+	public static void main(String[] args) {
+
+	}
+
+}

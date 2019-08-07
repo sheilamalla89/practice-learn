@@ -1,0 +1,15 @@
+package files;
+
+public class Write {
+
+	public static void main(String[] args) {
+		
+		// 1. Define the path that we want to write
+		// 2. create a file in Java
+		// 3. open a file
+		// 4. write to the file
+		// 5. Close the resources
+
+	}
+
+}

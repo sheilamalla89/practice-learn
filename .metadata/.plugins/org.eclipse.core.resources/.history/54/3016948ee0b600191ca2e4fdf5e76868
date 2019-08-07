@@ -1,0 +1,22 @@
+package exceptionsfiles;
+
+import java.util.Scanner;
+
+public class PaymentApp {
+
+	public static void main(String[] args) {
+
+		System.out.print("Enter payment amount: ");
+		Scanner scan = new Scanner(System.in);
+		
+		try {
+		double amount = scan.nextDouble();
+		}
+		catch(NegativePaymentException e) {
+			System.out.println("Error: Cannot enter negative amount");
+			System.out.println(e.toString());
+		}
+		
+	}
+
+}

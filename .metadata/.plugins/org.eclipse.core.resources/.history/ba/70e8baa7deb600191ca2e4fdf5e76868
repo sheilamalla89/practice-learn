@@ -1,0 +1,13 @@
+package exceptionsfiles;
+
+import java.util.Scanner;
+
+public class PaymentApp {
+
+	public static void main(String[] args) {
+
+		System.out.print("Enter payment amount: ");
+		Scanner scan = new Scanner(System.in);
+	}
+
+}

@@ -1,0 +1,14 @@
+package labs;
+
+/*
+ * Read a file that checks the criteria for a password
+ * Read a file that contains multiple sets of passwords(use http://www.theonegenerator.com/ to generate a set of test data)
+ * 
+ */
+public class PasswordVerifyApp {
+
+	public static void main(String[] args) {
+
+	}
+
+}

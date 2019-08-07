@@ -1,0 +1,45 @@
+package labs;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+/*
+ * Read a file that checks the criteria for a password
+ * Read a file that contains multiple sets of passwords(use http://www.theonegenerator.com/ to generate a set of test data).
+ * Verify that the password contains all of the following criteria:
+ *  - 1. A number
+ *  - 2. A letter
+ *  - 3. Special character(!@#)
+ *  Create three User Defined Exceptions for the corresponding criteria:
+ *  If the password does not meet the criteria, create and throw the appropriate exception
+ * 
+ */
+public class PasswordVerifyApp {
+
+	public static void main(String[] args) {
+
+		String password;
+		// 1. Define the file
+		String filename = "C:\\Sheila\\JavaPractice\\passwords.txt";
+		
+		// 2. create a file
+		File file = new File(filename);
+		
+		// 3. read the file
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			password = br.readLine();
+		} catch (FileNotFoundException e) {
+			System.out.println("File does not exist.");
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.out.println("Error: ");
+			e.printStackTrace();
+		}
+		System.out.println(password);
+	}
+
+}

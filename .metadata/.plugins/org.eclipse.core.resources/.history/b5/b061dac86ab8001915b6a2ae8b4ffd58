@@ -1,0 +1,39 @@
+package labs;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class PhoneNumberApp1 {
+
+	public static void main(String[] args) {
+		// This will read a text file and will retrieve phone number
+				// valid phone number:
+					// 10 digit long
+					// Area code cannot start in 0 or 9
+					// There can be 911 in the phone
+		String phoneNumber;
+		// 1. Define the file
+		String filename = "C:\\Sheila\\JavaPractice\\readCorrectPhoneNumber.txt";
+		
+		// 2. Create a file
+		File file = new File(filename);
+		
+		// 3. Open the file
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			phoneNumber = br.readLine();
+		} catch (FileNotFoundException e) {
+			System.out.println("File does not exist.");
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.out.println("Cannot read file");
+			e.printStackTrace();
+		}
+		
+		System.out.println(phoneNumber);
+	}
+
+}

@@ -1,0 +1,20 @@
+package files;
+
+public class Write {
+
+	public static void main(String[] args) {
+		
+		// 1. Define the path that we want to write
+		String filename = "C:\\Sheila\\JavaPractice\\to_be_readFile.txt";
+		// 2. create a file in Java
+		
+		File file = new File(filename);
+		
+		// 3. open a file
+		// 4. write to the file
+		// 5. Close the resources
+		
+
+	}
+
+}

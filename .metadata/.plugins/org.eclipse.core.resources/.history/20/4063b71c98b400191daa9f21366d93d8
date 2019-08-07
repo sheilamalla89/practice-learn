@@ -1,9 +1,0 @@
-package basics;
-
-public class MinMaxAvg {
-
-	public static void main(String[] args) {
-		
-	}
-	
-}

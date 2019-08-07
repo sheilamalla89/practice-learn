@@ -1,0 +1,11 @@
+package exceptionsfiles;
+
+public class NegativePaymentException extends Exception{
+	 
+	public NegativePaymentException(double amount) {
+		
+	}
+	
+	
+
+}

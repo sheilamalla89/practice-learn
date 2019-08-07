@@ -1,0 +1,20 @@
+package labs;
+
+public class PhoneNumberApp {
+
+	public static void main(String[] args) {
+		// This will read a text file and will retrieve phone number
+		// valid phone number:
+			// 10 digit long
+			// Area code cannot start in 0 or 9
+			// There can be 911 in the phone
+		// 1. Define the file
+		String filename = "C:\\Sheila\\JavaPractice\\readCorrectPhoneNumber";
+		
+		// 2. Open the file
+		
+		
+
+	}
+
+}

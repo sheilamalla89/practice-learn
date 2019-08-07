@@ -1,0 +1,9 @@
+package exceptionsfiles;
+
+public class NegativePaymentException {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

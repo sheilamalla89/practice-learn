@@ -1,0 +1,26 @@
+package files;
+
+import java.io.BufferedReader;
+import java.io.File;
+
+public class Read {
+	
+	public static void main(String[] args) {
+		// 1. Define the file (path) that we want to read
+		String filename = "C:\\Sheila\\JavaPractice\\to_be_readFile.txt";
+		
+		
+		// 2. Create the file in java
+		File file = new File(filename);
+		
+		// 3. Open the file
+		
+		BufferedReader br = new BufferedReader(new FileReader(file));
+		// 4. Read the file
+		String text = br.readLine();
+		
+		// 5. Close the resources
+		br.close();
+	}
+
+}

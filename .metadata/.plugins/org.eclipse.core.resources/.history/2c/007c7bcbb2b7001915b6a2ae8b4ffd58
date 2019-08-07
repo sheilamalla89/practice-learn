@@ -1,0 +1,67 @@
+package labs;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class PhoneNumberApp {
+
+	public static void main(String[] args) {
+		// This will read a text file and will retrieve phone number
+		// valid phone number:
+			// 10 digit long
+			// Area code cannot start in 0 or 9
+			// There can be 911 in the phone
+		// 1. Define the file
+		String phoneNumber = "";
+		String filename = "C:\\Sheila\\JavaPractice\\readCorrectPhoneNumber.txt";
+	
+		// 2. Open the file
+		File file = new File(filename);
+		
+		
+		try {
+			// 3.Read the file
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			
+			// reads all the lines from the file until its value is null
+			while((phoneNumber = br.readLine()) != null){
+				//System.out.println(phoneNumber);
+				if(Integer.parseInt(phoneNumber.substring(0, 3)) == 911) {
+					System.out.println("Emergency phone number:"+phoneNumber); 
+					}
+				else if(phoneNumber.length() == 10) { 
+					if((Integer.parseInt(phoneNumber.substring(0, 1)) != 0) && (Integer.parseInt(phoneNumber.substring(0, 1)) != 9))
+							{
+							System.out.println(phoneNumber);
+							}
+					else {
+						System.out.print("");
+					}
+				}
+				else {
+					System.out.print("");
+				}
+			
+		} 
+			// 4.Close resources
+						br.close();
+		}
+		catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	//	System.out.println(text);
+		finally {
+			System.out.println("Program ended.");
+		}
+		
+
+	}
+
+}

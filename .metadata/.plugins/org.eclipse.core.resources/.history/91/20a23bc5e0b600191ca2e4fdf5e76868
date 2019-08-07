@@ -1,0 +1,15 @@
+package exceptionsfiles;
+
+public class NegativePaymentException extends Exception{
+	 
+	double amount;
+	public NegativePaymentException(double amount) {
+		System.out.println("Erro: negative payment");
+		//this.amount = amount;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package exceptionsfiles;
+
+public class NegativePaymentException {
+
+}
